@@ -4,7 +4,7 @@ def fix_ingredients(ingredients:list) -> list[str]:
     if not all(isinstance(item, str) for item in ingredients):
         raise TypeError("All elements must be str")
     for item in ingredients:
-        if not item.startswith("z"):
+        if not item.casefold().startswith("z"):
             ingredients[ingredients.index(item)] = item[::-1]
     return ingredients
 
