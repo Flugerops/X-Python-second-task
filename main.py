@@ -11,3 +11,5 @@ def fix_ingredients(ingredients:list) -> list[str]:
 
 if __name__ == "__main__":
     print(fix_ingredients(["sugar", "zmilk", "retaW", "salt", "honey"]))
+    print(fix_ingredients(["zFlour", "liO", "hcaetS"]))
+    print(fix_ingredients(["zSalt", "retniW", "kcab"]))
